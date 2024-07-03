@@ -2,6 +2,13 @@ public class Box {
     double width;
     double height;
     double depth;
+
+    Box(Box ob){
+        width = ob.width;
+        height = ob.height;
+        depth = ob.depth;
+    }
+
     Box(){
         width = -1;
         height = -1;
