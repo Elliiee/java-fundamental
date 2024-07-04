@@ -1,7 +1,7 @@
 public class SimpleInheritance {
     public static void main(String[] args){
         A superOb = new A();
-        B subOb = new B();
+        B subOb = new B(-1, -1);
 
         superOb.i = 10;
         superOb.j = 20;

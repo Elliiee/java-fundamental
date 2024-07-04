@@ -1,25 +1,27 @@
 public class Box {
-    double width;
-    double height;
-    double depth;
+    private double width;
+    private double height;
+    private double depth;
 
+    //constructor clone of an object
     Box(Box ob){
         width = ob.width;
         height = ob.height;
         depth = ob.depth;
     }
 
-    Box(){
-        width = -1;
-        height = -1;
-        depth = -1;
-    }
-
-    //constructor 
+    //constructor when all dimensions specified 
     Box(double w, double h, double d){
         width = w;
         height = h;
         depth = d;
+    }
+
+    //default constructor 
+    Box(){
+        width = -1;
+        height = -1;
+        depth = -1;
     }
 
     Box(double len){
