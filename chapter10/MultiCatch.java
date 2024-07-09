@@ -5,7 +5,7 @@ class MultiCatch {
         int a = 10, b = 0;
         int[] vals = { 1, 2, 3 };
         try {
-            // int result = a / b; // generate an AritchmeticException
+            int result = a / b; // generate an AritchmeticException
             vals[10] = 19; // generate an ArrayIndexOutOfBoundException
         } catch (ArithmeticException | ArrayIndexOutOfBoundsException e) {
             System.out.println("Exception caught: " + e);
