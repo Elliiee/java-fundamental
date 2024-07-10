@@ -19,7 +19,7 @@ class Meta2 {
             System.out.println();
 
             //display all annotations for myMeth.
-            Method m = ob.getClass().getMethod("myMeth", null);
+            Method m = ob.getClass().getMethod("myMeth");
             annos = m.getAnnotations();
             System.out.println("All annotations for myMeth: ");
             for (Annotation a : annos){
