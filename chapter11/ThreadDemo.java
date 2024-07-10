@@ -16,4 +16,11 @@ class ThreadDemo {
         }
         System.out.println("Main thread exiting.");
     }
+
+    //a factory method that creates and starts a thread.
+    public static NewThread createAndStart(){
+        NewThread myThrd = new NewThread();
+        myThrd.t.start();
+        return myThrd;
+    }
 }
