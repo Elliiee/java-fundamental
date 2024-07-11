@@ -27,4 +27,5 @@ class MyClass<T extends Comparable<T>> implements MinMax<T>{
         }
         return v;
     }
+
 }
