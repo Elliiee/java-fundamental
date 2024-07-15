@@ -1,0 +1,20 @@
+Iterator interface or ListIterator interface instance object, 
+iterator enables you to cycle through a collection. 
+
+ListIterator -> Iterator
+ListIterator extends Iterator and allows bidirectional traversal of a list. 
+
+Using an Iterator 
+1. obtain an iterator to the start of the collection by calling the collection's iterator() method
+2. set up a loop that makes call to hasNext() and loop until false 
+3. within the loop, obtain each element by calling next(). 
+
+If you want to access from the end, use ListIterator to create the iterator instance. 
+
+Remember that for loop can cycle through any collection of objects that implement the Iterable interface.
+Also all of the collection classes implements this interface! (Iterable interface)
+
+Spliterators 
+defined by the Spliterator interface. 
+it supports parallel iteration of portions of the sequence. 
+so it supports parallel programming. 

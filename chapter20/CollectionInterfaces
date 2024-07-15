@@ -1,0 +1,40 @@
+1. Collection
+2. Deque
+3. List
+4. NavigableSet
+5. Queue
+6. SequencedCollection
+7. SequencedSet
+8. Set 
+9. SortedSet 
+In addition to the collection interfaces, collections also use Comparator, RandomAccess, Iterator, ListIterator, and Spliterator interfaces. 
+
+The Collection interface is the foundation upon which the Collections Framework is built because it must be implemented by any class that defines a collection. 
+interface Collection<E>
+
+Collection extends the Iterable interface. Collection -> Iterable 
+This means that all collections can be cycled through by use of the for each style for loop. 
+
+The SequencedCollection Interface 
+
+The List interface extends SequencedCollection 
+
+The Set interface defines a set. 
+It extends Collection and specifies the behavior of a collection that does not allow duplicate elements. 
+
+The SequencedSet Interface 
+introduced in JDK 21, extends both Set and SequencedCollection
+
+The SortedSet Interface 
+extends SequencedSet and order it's elements in ascending order. 
+
+The Navigatable Interface 
+extends SortedSet 
+supports the retrieval of elements based on the closest match to a given value or values. 
+
+The Queue Interface 
+extends Collection
+
+The Deque Interface
+extends Queue and SequencedCollection
+is a double-ended queue. 

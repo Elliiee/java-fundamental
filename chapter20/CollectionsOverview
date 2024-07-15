@@ -1,0 +1,24 @@
+The Java Collections Framework standardizes the way in which group of object are handled
+by your program.
+
+Collection Framework Goals: 
+1. meet high performance 
+2. allow different types of collections to work in a similar manner 
+3. extending had to be easy
+
+The entired framework is built upon a set of standard interfaces. 
+
+Several standard implementations, such as LinkedList, HashSet, and TreeSet of theses interfaces 
+are provided that you may use as-is. 
+
+Algorithms are another important part of the collection mechanism. 
+Algorithms operate on collections and are defined as static methods within the Collection class. 
+The algorithms provide a standard means of manipulating collections. 
+
+Iterator interface is closly related to the collections framework. 
+It provides a means of enumerating the contents of a collection. 
+
+Although maps are part of the Collections Framework, they are not "collections" in the strict use of the term. 
+You can, however, obtain a collection-view of a map. 
+Such a view contains the elements from the map stored in a collection. 
+Thus, you can process the contents of a map as a collection, if you choose to. 

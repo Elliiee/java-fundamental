@@ -1,0 +1,6 @@
+Storing User-defined classes in Collections 
+
+The Random Access interface
+contains no members. 
+However, by implementing this interface, a collection signals that it supports
+efficient random access to its elements. 

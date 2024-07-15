@@ -1,0 +1,44 @@
+Note that maps don't implement the Iterable interface. So you can't use for loop directly. 
+In order to use for loop, we need to obtain a collection-view of the map. 
+
+the map interfaces 
+1. Map
+2. Map.Entry (nested interface)
+3. NavigableMap
+4. SequencedMap
+5. SortedMap
+
+Note that Maps are not collections, because they don't implement Collection interface. 
+However, you can obtain a collection-view of a map by using the entrySet() method. 
+entrySet() method returns a Set that contains the elements in the map. 
+also, keySet() returns the collection-view of the keys. 
+values() returns the collection-view of the values. 
+For all three collection-views, the collection is backed by the map. Changing one affects the other!
+
+The SequencedMap Interface
+extends Map to define a special kind of map whose entries have a well-defined encounter order. 
+
+The SortedMap interface
+extends SequencedMap
+entries are maintained in ascending order 
+
+The Navigable interface 
+extends SortedMap
+
+The Map.Entry interface
+
+The Map Classes 
+1. AbstractMap 
+2. EnumMap
+3. HashMap 
+4. TreeMap 
+5. WeakHashMap
+6. LinkedHashMap 
+7. IdentityHashMap 
+
+The HashMap Class 
+extends AbstractMap and implements the Map interface. 
+
+The TreeMap class 
+extends AbstractMap and implements the NavigableMap interface 
+maps stored in a tree structure. 
