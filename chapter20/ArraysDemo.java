@@ -32,8 +32,6 @@ class ArraysDemo {
         int index = Arrays.binarySearch(array, -9);
 
         System.out.println(index);
-
-
     }
 
     static void display(int[] array){

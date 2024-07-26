@@ -1,0 +1,22 @@
+A stream is a conduit for data. 
+
+A stream represents a sequence of objects. 
+operates on a data source, such as an array or a collection
+itself, never stores the data!
+it only moves data 
+it does not change the original data source, it operates and creates a new steam result 
+this stream is different from the I/O stream, this means objects
+
+The stream API defines several stream interfaces 
+package java.util.stream
+module java.base 
+
+BaseStream, the foundation interface 
+
+BaseStream extends AutoClosable interface, so we can use try-with-resources statement. 
+But for those data from the collections, no need to close anything. 
+close a file is more reasonable 
+
+interface Stream implements BaseStream 
+
+
