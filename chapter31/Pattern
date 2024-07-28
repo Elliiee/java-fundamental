@@ -1,0 +1,9 @@
+A pattern is created by calling the compile() factor method. 
+The input parameter is the regular expression you want to use. 
+It returns a Pattern object that contains the pattern. 
+
+Once you have created a Pattern object, you will use it to create a Matcher. 
+This is done by calling the matcher() method defined by Pattern. 
+The input parameter CharSequence is an interface that defines a read-only set of characters. 
+You can pass a string to matcher(), inside which, you want to find if there are any matches. 
+

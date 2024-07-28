@@ -1,0 +1,27 @@
+you can specify a regular expression that represents a general form that 
+can match several different specific character sequences. 
+
+There are two classes that support regular expression: 
+Pattern 
+Matcher 
+
+use Pattern to defiene a regular expression
+then match the Pattern against another sequence using Matcher 
+
+In the language of regular expression, s normal character is also called a "literal". 
+
+A character class is a set of characters. 
+in brackets: []
+for example, [xyz]: matches x, or y, or z 
+NOT [^xyz]: matches any character except x, y and z 
+
+use a hyphen to specify the range [1-9]
+
+The wildcard character is the . (dot), it matches any character. 
+
+A quantifier determines how many times an expression is matched. 
++ : match 1 or more 
+* : match 0 or more 
+? : match 0 or 1 (match or doesn't match)
+
+In general, if you specify an invalid expression, a PatternSyntaxException will be thrown. 

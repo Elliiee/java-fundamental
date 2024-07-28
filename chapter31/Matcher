@@ -1,0 +1,16 @@
+Like Pattern class, Matcher class does not have constructors either. 
+You create a Matcher by calling the matcher() factory method defined by Pattern. 
+
+matches() methods determines whether the character sequence matches the pattern. 
+It returns true if the sequence and the pattern match, false otherwise. Notice that the entire 
+sequence must match the pattern, not just a subsequence of it. (completely match every character)
+
+otherwise use find() method to determine if only a subsequence matches the pattern. 
+This method can be called repeatedly, allowing it to find all matching subsequences. 
+Each call to find() begins where the previous one left off. 
+
+You can obtain a string containing the last matching sequence by calling group() method. 
+
+start() 
+end()
+replaceAll() 
