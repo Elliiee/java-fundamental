@@ -1,0 +1,54 @@
+A class that is inherited is called a "superclass".
+The class that does the inheriting is called a "subclass".
+Therefore, a subclass is a specialized version of a superclass. And it inherits all of the members
+defined by the superclass and adds its own, unique elements. 
+
+keyword -- extends 
+
+superclass A 
+subclass B extends A 
+B can use the variables and methods from A and also have its own variables and methods, aka, members.
+But B can't access the private members. 
+Private members are only accessible by it's own class members. 
+
+There can be only 1 superclass to the subclass. And itself can't be the superclass either. 
+
+subclass 可以直接用superclass 的variables, 直接用
+
+subclass extends superclass 之后，superclass里面的variabls 就是直接使用，不需要super， 直接用
+然后subclass可以再加上自己的variables 一起使用
+但是这里会比较啰嗦，可以用keyword -- super 直接调用superclass 的constructors
+而且如果superclass 的variables 是private的，subclass也要通过用super来接触superclass 
+//而且如果superclass variables are private, subclass 只能用super()不能直接用了
+
+remember super（）必须写在subclass constructor的第一行
+
+如果subclass variable的名字和superclass variable的名字一样，那必须用super.variablename来区分彼此
+叫"hide", 就是两者名字一样
+
+create 一个superclass, 这个superclass 可以用subclass initiate，左边是superclass, 右边是subclass 
+
+inheritance makes the reuse of the code possible. 
+
+Method overriding forms the basis for one of Java's most powerful concept: dynamic method dispatch
+
+Dynamic method dispatch is the mechanism by which a call to an overridden method is resolved at 
+run time, rather than compile time. 
+
+Dynamic method dispatch is important because this is how Java implements run-time polymorphism. 
+
+overridden methods are another way that java implements the "one interface, multiple methods"
+aspect of polymorphism.
+
+abstract is a keyword
+abstract method does not need to be implemented immediately
+if the class has abstract method, then it has to be an abstract class too! 
+
+ans also, there is no object can be created for the abstract class 
+你可以用左边create abstract class 但是右边是不可能initiate 成abstract object的，必须用它的subclass 
+
+also, you can't declare abstract constructors or abstract static methods 
+
+any subclass of an abstract class must either implement all of the abstract methods in the 
+superclass or be declared abstract itself. 
+
