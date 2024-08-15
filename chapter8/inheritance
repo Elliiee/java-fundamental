@@ -52,3 +52,8 @@ also, you can't declare abstract constructors or abstract static methods
 any subclass of an abstract class must either implement all of the abstract methods in the 
 superclass or be declared abstract itself. 
 
+final 有三种用法
+1. create constant variable with final keyword
+2. using final to prevent overriding
+3. using final to prevent inheritance 
+

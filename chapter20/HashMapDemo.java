@@ -17,5 +17,6 @@ class HashMapDemo {
         double balance = hm.get("John");
         hm.put("John", balance + 1000);
         System.out.println("John's new balance: " + hm.get("John"));
+
     }
 }
